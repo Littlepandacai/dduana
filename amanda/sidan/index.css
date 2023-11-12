@@ -1,0 +1,151 @@
+@font-face {
+    font-family:'Bungee Shadow' ;
+    src: url(../sidan/typsnitt/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Bungee Outline';
+    src: url(../sidan/typsnitt/Bungee_Outline/BungeeOutline-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url(../sidan/typsnitt/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Barlow Semi-condensed';
+    src: url(../sidan/typsnitt/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
+}
+
+:root{
+
+    --margin-line-up : 20px
+
+}
+
+* {
+    margin: 0;
+    
+}
+
+main{
+    background-image: url(bilder/bg1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding: 2px;
+   /* ^för att förebygga collapsing margins*/
+}
+
+main > div {
+
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 100px;
+    border-radius: 20px;
+
+
+}
+
+
+nav{
+
+    margin: 60px var(--margin-line-up);
+    display: flex;
+   
+
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+a {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    font-size: 25px;
+    font-family:'barlow condensed';
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#glow {
+    
+    border: 1px solid white;
+    box-shadow: white 0px 0px 5px;
+
+    font-weight: bolder;
+
+}
+
+a:hover{
+
+    color: orangered ; /*placeholder colour */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section{
+    
+    padding: 15px;
+    margin: 50px var(--margin-line-up) ;
+
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.flexcontainer{
+    display: flex;
+
+    grid-column: 1 / span 2;
+}
+
+h1{
+    font-size: 80px; /* fixa dynamik*/
+    font-family:'Bungee Shadow', 'Bungee Outline', Arial, Helvetica, sans-serif;
+    color: white;
+
+    margin: 0px var(--margin-line-up);
+}
+
+h2{
+    font-family: 'bungee outline';
+    color: white;
+}
+
+p, b,li{
+    font-family: 'barlow condensed';
+    color: white;
+}
+
+
+ol{
+    padding: 30px;
+    margin: 5px;
+
+}
