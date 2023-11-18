@@ -45,15 +45,17 @@ main{
 }
 
 main > div {
+
     background-color: rgba(0, 0, 0, 0.2);
     margin: 100px;
     border-radius: 20px;
+    max-width: 1000px;
 }
 
 nav{
     margin: 60px var(--margin-line-up);
+    
     display: flex;
-
     justify-content: center;
     align-items: center;
     gap: 5px;
@@ -81,8 +83,8 @@ a {
 #glow {
     border: 1px solid white;
     box-shadow: white 0px 0px 5px;
-
     font-weight: bolder;
+
     pointer-events: none;
 }
 
@@ -94,7 +96,6 @@ a:hover{
 section{
     padding: 15px;
     margin: 50px var(--margin-line-up) ;
-
     border: 1px solid white;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -103,9 +104,13 @@ section{
     grid-template-columns: 1fr 0.75fr;
     grid-template-rows: auto auto;
 }
+
+section p:first-of-type{
+    font-size: 14px;
+    padding-right: 15px;
+}
 .loveall ol {
     background-color:rgb(247, 133, 20) ;
-    
 }
 
 .helpever ol {
@@ -159,8 +164,8 @@ section{
     min-width: 0;
 }
 
-section .loveall article {
-   height: 200px;
+.loveall article {
+    height: 200px;
     background-color: rgb(253, 115, 90);
 
     display: flex;
@@ -168,9 +173,9 @@ section .loveall article {
     align-items: center;
     box-sizing: border-box;
     padding: 0px 10px;
-   
 }
-section .helpever article {
+
+.helpever article {
     height: 200px;
     background-color: rgb(141, 141, 141);
 
@@ -180,21 +185,26 @@ section .helpever article {
     box-sizing: border-box;
     padding: 0px 10px;
 }
+
 .loveall li,.loveall b ,.loveall p{
     color: beige;
 }
+
 .helpever li,.helpever b ,.helpever p{
     color: rgb(234, 234, 234);
 }
-section .loveall article:first-of-type{
+
+.loveall article:first-of-type{
     grid-column: 1;
     border-radius: 15px 0 15px 15px;
 }
-section .loveall article:nth-of-type(2){
+
+.loveall article:nth-of-type(2){
     grid-column: 3/ span 2;
     border-radius: 15px 15px 15px 0;
 }
-section .loveall article:nth-of-type(3){
+
+.loveall article:nth-of-type(3){
     grid-column: 5;
     border-radius: 0 15px 15px 15px;
 
@@ -205,28 +215,30 @@ section .loveall article:nth-of-type(3){
     display: flex;
     flex-direction: column;
 }
-section .loveall article:nth-of-type(3) p{
+
+.loveall article:nth-of-type(3) p{
     height: 200px;
     font-size: 12px;
     padding: 10px;
     display: flex;
     align-items: end;
 }
-section .loveall article:nth-of-type(4){
+
+.loveall article:nth-of-type(4){
     grid-column: 6;
     border-radius: 15px 15px 0 15px;
 }
 
-section .helpever article:first-of-type{
+.helpever article:first-of-type{
     grid-column: 1 / span 2;
     border-radius: 15px 15px 15px 0;
 }
-section .helpever article:nth-of-type(2){
+.helpever article:nth-of-type(2){
     grid-column: 3;
     border-radius:0 15px 15px 15px;
 }
 
-section .helpever article:nth-of-type(3){
+.helpever article:nth-of-type(3){
     grid-column: 4/ span 2;
     border-radius: 0 15px 15px 15px;
 
@@ -236,7 +248,8 @@ section .helpever article:nth-of-type(3){
     display: flex;
     flex-direction: column;
 }
-section .helpever article:nth-of-type(3) p{
+
+.helpever article:nth-of-type(3) p{
     height: 200px;
     font-size: 12px;
     padding: 10px;
@@ -245,24 +258,26 @@ section .helpever article:nth-of-type(3) p{
     text-shadow: gray 0 0 3px;
 }
 
-section .helpever article:nth-of-type(4){
+.helpever article:nth-of-type(4){
     grid-column: 6;
     border-radius: 15px 15px 0 15px;
 }
 
 h1{
-    font-size: 90px;
+    font-size: 75px;
     font-family:'Bungee Shadow', 'Bungee Outline', Arial, Helvetica, sans-serif;
     color: white;
 
     margin: 0px var(--margin-line-up);
 }
+
 h2{
     font-size: 40px;
     font-weight: bolder;
     font-family: 'bungee outline';
     color: white;
 }
+
 h3{
     font-size: 30px;
     font-weight: 900;
@@ -270,25 +285,31 @@ h3{
     color: white;
 
     padding-bottom: 30px;
-    
 }
+
 p,li,b{
     font-family: 'barlow condensed';
     color: white;
 }
+
 b{
+    font-family: 'barlow semi-bold';
     font-size: 18px ;
 }
+
 ol{
     padding: 30px;
 }
+
 ul{
     padding: 20px 0;
 }
+
 ul li{
     list-style: none;
     padding-left: 20px;
 }
+
 footer{
     padding: 15px 0;
     margin: var(--margin-line-up);
@@ -296,6 +317,7 @@ footer{
 
 
 @media (max-width: 500px) {
+    
     main{
         background-image: url(./bilder/fujiikazemobilebg.jpg);
         overflow: hidden;
@@ -307,20 +329,21 @@ footer{
     }
     
     h1{
-        font-size: 70px;
+        font-size: 16vw;
         text-align: center;
     }
 
     nav{
-        min-width: auto;
+        min-width: 0;
         margin: var(--margin-line-up);
     }
     
     a{
-        font-size: 16px;
         height: 30px;
+        font-size: 16px;
         padding: 10px 20px;
         border-radius: 8px;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -346,11 +369,11 @@ footer{
     }
     
     h2{
-        font-size: 30px;
+        font-size: 8vw;
         margin: 10px 20px 0 20px;
     }
     h3{
-        font-size: 20px;
+        font-size: 4.5vw;
         margin: 0 20px;
         padding: 0;
 
@@ -362,51 +385,93 @@ footer{
         grid-template-rows: 1fr 1fr;
     }
 
-    section .loveall article:nth-of-type(2){
-            grid-column: 2/4;
-        }
+    .loveall article:nth-of-type(2){
+        grid-column: 2/4;
+    }
 
-    section .loveall article:nth-of-type(3){
+    .loveall article:nth-of-type(3){
         grid-column: 2;
         grid-row: 2;
     }
 
-    section .loveall article:nth-of-type(4){
+    .loveall article:nth-of-type(4){
         grid-column: 3/4;
     }
 
-
-    section .helpever article:nth-of-type(1) {
+    .helpever article:nth-of-type(1) {
        grid-column: 1/ span 2;
        grid-row: 1;
         
     }
 
-    section .helpever article:nth-of-type(2) {
+    .helpever article:nth-of-type(2) {
         grid-column: 3;
         grid-row: 1;
     }
 
-    section .helpever article:nth-of-type(3) {
+    .helpever article:nth-of-type(3) {
         grid-column: 1/ span 2;
         grid-row: 2;
     }
 
-    section .helpever article:nth-of-type(4) {
+    .helpever article:nth-of-type(4) {
         grid-column: 3;
         grid-row: 2;
     }
-
+    
+    p , li , b {
+        font-size: 4vw;
+    }
     article p {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 3vw;
+        padding: 1vw;
     }
 
     footer{
-    
         padding: 0;
     }
 }
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    body{
+        font-size: 1.35vw;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    h2{
+        font-size: 3.5vw;
+    }
+    h3{
+        font-size: 3vw;
+    }
+    section p:first-of-type{
+        font-size: 1.35vw;
+    }
+
+}
+
+@media (min-width: 1200px){
+    main > div{
+        margin: 100px auto;
+    }
+    h1{
+        font-size: 120px;
+    }
+    h2{
+        font-size: 42px;
+    }
+    h3{
+        font-size: 36px;
+    }
+    section p:first-of-type{
+        font-size: 16px;
+    }
+    
+
+    
+}
+
 
 
 
