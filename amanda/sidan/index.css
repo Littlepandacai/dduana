@@ -109,6 +109,7 @@ section p:first-of-type{
     font-size: 14px;
     padding-right: 15px;
 }
+
 .loveall ol {
     background-color:rgb(247, 133, 20) ;
 }
@@ -264,7 +265,7 @@ section p:first-of-type{
 }
 
 h1{
-    font-size: 75px;
+    font-size: 90px;
     font-family:'Bungee Shadow', 'Bungee Outline', Arial, Helvetica, sans-serif;
     color: white;
 
@@ -372,12 +373,13 @@ footer{
         font-size: 8vw;
         margin: 10px 20px 0 20px;
     }
+
     h3{
         font-size: 4.5vw;
         margin: 0 20px;
         padding: 0;
-
     }
+
     .flexcontainer {
         grid-row: 3;
         display: grid;
